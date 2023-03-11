@@ -1,15 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/** @format */
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import M2faApp from "./component/m2fa-app";
+import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <M2faApp />
   </React.StrictMode>
 );
 
