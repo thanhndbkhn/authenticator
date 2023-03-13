@@ -6,7 +6,8 @@ Then, client app can use at port: 3000
 ## How to run in development
 Please follow these steps
 ```bash
-git clone https://github.com/thanhndbkhn/authenticator.git
+git clone https://github.com/thanhndbkhn/authenticator.git]
+cd authenticator
 ```
 ```bash
 npm install
