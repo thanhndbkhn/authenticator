@@ -1,17 +1,24 @@
 /** @format */
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import M2faApp from "./component/m2fa-app";
+import MFAApp from "./component/mfa-app";
 import reportWebVitals from "./reportWebVitals";
+import { MFAAdd } from "./component/mfa-add";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <M2faApp />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MFAApp />} />
+        <Route path="add" element={<MFAAdd />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

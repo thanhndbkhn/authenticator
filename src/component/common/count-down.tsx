@@ -9,21 +9,20 @@ import {
   X_Y_CIRCLE,
 } from "../../shared/constant";
 
-export const CountDown = () => {
-  const [counter, setCounter] = useState(TIME_DURATION);
+interface ICountDown {
+  durationTimeLeft: number;
+}
 
+export const CountDown = (props: ICountDown) => {
+  const [counter, setCounter] = useState(props.durationTimeLeft);
   useEffect(() => {
-    counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
-    counter === 0 && setCounter(TIME_DURATION);
-  }, [counter]);
+    setCounter(props.durationTimeLeft);
+  }, [props.durationTimeLeft]);
 
   const strokeDasharray = `${(counter / TIME_DURATION) * L_CIRCLE} ${L_CIRCLE}`;
 
   return (
-    <div
-      id="countdown"
-      className={`w-40 h-40 relative text-gray-500`}
-    >
+    <div className={`w-40 h-40 relative text-gray-500`}>
       <svg width={X_Y_CIRCLE * 2} height={X_Y_CIRCLE * 2}>
         <circle
           className="-rotate-90 origin-center"
