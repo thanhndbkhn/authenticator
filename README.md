@@ -9,14 +9,14 @@ Please follow these steps
 git clone https://github.com/thanhndbkhn/authenticator.git
 ```
 ```bash
-  npm install
-  npm run start
+npm install
+npm run start
 ```
 access: http://localhost:3000
 
 ## How to run test Front-end
 ```bash
-  npm test
+npm test
 ```
 
 ## Note
