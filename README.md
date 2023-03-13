@@ -2,7 +2,7 @@
 Application with React + Mobx (Typescript)
 ## Usage
 
-Then, client app can use at port: 3000
+Client app can use at port: 3000
 ## How to run in development
 Please follow these steps
 ```bash
