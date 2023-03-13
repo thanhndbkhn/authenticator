@@ -9,10 +9,9 @@ export const Header = () => {
     <div className="p-10 flex w-full  items-center justify-between flex-none">
       <span className="text-xl text-red-600">Edit</span>
       <span className="text-3xl text-semibold">Tokens</span>
-      <IoIosAdd
-        className="text-3xl text-red-600 cursor-pointer"
-        onClick={() => navigate("/add")}
-      />
+      <div onClick={() => navigate("/add")} data-testid={"add"}>
+        <IoIosAdd className="text-3xl text-red-600 cursor-pointer" />
+      </div>
     </div>
   );
 };

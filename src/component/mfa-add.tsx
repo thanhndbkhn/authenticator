@@ -86,6 +86,7 @@ export const MFAAdd = observer(() => {
         <div className="w-3/4 mx-auto mt-20 flex items-center justify-between">
           <button
             type="submit"
+            data-testid="submit"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-100 h-40"
           >
             Add token
@@ -128,6 +129,7 @@ const TextField = (props: ITextField) => {
       </label>
       <input
         type="text"
+        data-testid={props.name}
         name={props.name}
         value={props.value}
         onChange={props.handleChange}
