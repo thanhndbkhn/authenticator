@@ -4,27 +4,33 @@ Application with React + Mobx (Typescript)
 
 Then, client app can use at port: 3000
 ## How to run in development
-```bash
 Please follow these steps
-git clone https://github.com/thanhndbkhn/authenticator.git
+```bash
+git clone https://github.com/thanhndbkhn/authenticator.git]
+cd authenticator
 ```
 ```bash
-  npm install
-  npm run start
-
-  access: http://localhost:3000
+npm install
+npm run start
 ```
+access: http://localhost:3000
+
 ## How to run test Front-end
 ```bash
-  npm test
+npm test
 ```
 
 ## Note
 You can change ```durationTimeLeft``` in ```src/shared/mfa.mock.ts``` to setting timeout for a token
-![Alt text](shared/image/list-mfa.png)
+
+![Alt text](src/shared/image/list-mfa.png)
+
+You can add new token with name, token number seccet (equal 6 digits) and without logo url (will be set default)
+
+![Alt text](src/shared/image/add-mfa.png)
+
 ## Learn More
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Mobx with React: https://mobx.js.org/react-integration.html 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
