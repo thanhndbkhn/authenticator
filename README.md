@@ -16,8 +16,12 @@ git clone https://github.com/thanhndbkhn/authenticator.git
 ```
 ## How to run test Front-end
 ```bash
-npm test
+  npm test
 ```
+
+## Note
+You can change ```durationTimeLeft``` in ```src/shared/mfa.mock.ts``` to setting timeout for a token
+![Alt text](shared/image/list-mfa.png)
 ## Learn More
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
